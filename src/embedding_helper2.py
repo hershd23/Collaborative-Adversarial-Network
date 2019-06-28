@@ -20,7 +20,7 @@ class Get_Embedding(object):
         return -1
 
     def create_embed_matrix(self, file_path, word_index):
-        f = open("./paragram.txt", encoding = "latin1")
+        f = open("../embeddings/paragram.txt", encoding = "latin1")
 
         for x in f:
             data = x.split("\t")

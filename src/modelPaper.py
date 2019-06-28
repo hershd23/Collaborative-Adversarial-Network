@@ -14,8 +14,8 @@ import numpy as np
 
 use_cuda = torch.cuda.is_available()
 
-data_file = "./dataset/train.tsv"
-data_test_file = "./dataset/test.tsv"
+data_file = "../dataset/train.tsv"
+data_test_file = "../dataset/test.tsv"
 training_ratio = 0.9
 max_len = 30
 tracking_pair = False
@@ -32,7 +32,7 @@ print(len(data.word2index))
 
 """# Embeddings"""
 
-embd_file = "./glove-global-vectors-for-word-representation/glove.6B.100d.txt"
+embd_file = "../embeddings/glove-global-vectors-for-word-representation/glove.6B.100d.txt"
 
 from embedding_helper2 import Get_Embedding
 
