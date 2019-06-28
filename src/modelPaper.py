@@ -556,17 +556,6 @@ for epoch in range(0, num_iters):
         dis_loss2 += loss_d
     
         train_loss2 += com_loss
-
-     
-        
-        
-    '''if epoch % 5:
-        learning_rate *= 0.5
-        model_optimizer = optim.Adam(model_trainable_parameters, lr=learning_rate)
-        optimizer_final = optim.Adam(net_final.parameters(), lr = learning_rate)
-        optimizerD = optim.Adam(netD.parameters(), lr=learning_rate)
-        optimizerG = optim.Adam(netG.parameters(), lr=learning_rate)
-        '''
     
     
     a_scores = []
