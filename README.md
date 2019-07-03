@@ -15,7 +15,7 @@ The CAN model comprises of a siamese ma-LSTM network followed by a generator-dis
 
 ![What is this?](img/overview.png?raw=true "Title")
 
-The word embeddings are fed into the siamese(shared) BiLSTM layer and the average pool of the hidden states each of the sentences i.e. sentence1/sentence2 in paraphrase detection task or question/answer in the question answering task is taken to be the sentence representation in this case(attention can also be used to find out the sentence representation). The Manhattan distance of the two representations is used to calculate the similarity score between the two sentences.
+The word embeddings are fed into the siamese(shared) BiLSTM layer and the average pool or attention (**dot product attention used in this case**) of the hidden states each of the sentences i.e. sentence1/sentence2 in paraphrase detection task or question/answer in the question answering task is taken to be the sentence representation in this case. The Manhattan distance of the two representations is used to calculate the similarity score between the two sentences.
 
 The hypothesis in the paper is that in case of tasks like paraphrase detection or even in cases like question-answering the common words between the two sentences are more important than the other words for similarity measurement and that the corresponding hidden states would contain more important information (stopwords are removed). So accordingly we take the common words from the two sentences and take their respective hidden states and max-pool them to get another sentence representation or feature vector.
 
