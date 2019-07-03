@@ -11,4 +11,4 @@ Although the train and test tsv files can be found in the dataset folder.
 
 The CAN model comprises of a siamese ma-LSTM network followed by a generator-discriminator network eventually followed by a softmax layer which gives out the final predictions for each class (classes = 2 in this case)
 
-![Alt text](img/overview.jpg?raw=true "Title")
+![Alt text](img/overview.png?raw=true "Title")
