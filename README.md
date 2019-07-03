@@ -31,5 +31,7 @@ The generator plays a collaborative adversarial game with the discriminator, i.e
 ## Other specifications
 
 Dropout on the final layer = 0.5
+
 Optimizer = Adadelta
+
 Stopwords removed (from the nltk stopwords dictionary)
