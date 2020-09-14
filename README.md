@@ -35,3 +35,8 @@ Dropout on the final layer = 0.5
 Optimizer = Adadelta
 
 Stopwords removed (from the nltk stopwords dictionary)
+
+## Author
+Hersh Dhillon.
+
+Feel free to use this code in any shape or form
